@@ -1,0 +1,38 @@
+site_name: Мой Справочник
+site_url: https://my-spravochnik.vercel.app
+
+theme:
+  name: material
+  language: ru
+  palette:
+    # Настройка темной и светлой темы (переключатель будет вверху)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Включить тёмную тему
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Включить светлую тему
+  features:
+    - navigation.tabs          # Меню сверху (очень удобно на мобиле)
+    - navigation.sections      # Боковое меню блоками
+    - search.suggest           # Живой поиск при вводе
+    - search.highlight         # Подсветка найденных слов
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables                     # Чтобы таблицы не ломались
+  - pymdownx.highlight:        # Красивая подсветка SQL и Python кода
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
