@@ -1,5 +1,5 @@
 {
-  "installCommand": "uv pip install -r requirements.txt --system",
-  "buildCommand": "mkdocs build",
+  "installCommand": "true",
+  "buildCommand": "uv pip install mkdocs mkdocs-material --system && mkdocs build",
   "outputDirectory": "site"
 }
