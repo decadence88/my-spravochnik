@@ -1,13 +1,11 @@
 # Export Tabelle zur Kollegen
 
 ```sql
-1. drop table if exists TEMP.aw12364_1;
+1.
+drop table if exists TEMP.aw12364_1;
 create table TEMP.aw12364_1 as (
-
 SQL_CODE SQL_CODE SQL_CODE SQL_CODE SQL_CODE
-
-) with data
-;
+) with data;
 
 2.Code durchführen, um Tabellen zu erstellen
 
@@ -42,7 +40,8 @@ empf=S0802409 oder Ornder ohne per mail
 per_mail=true
 XLS_EXPORT*/
 
-4. In excel ein Datei mit irgendwelche Info aber **mit NAME - einmalig_VC** zu erstellen 
+4. In excel ein Datei mit irgendwelche Info
+aber **mit NAME - einmalig_VC** zu erstellen 
 und speichern in Da_import_ORG_EDV_DM
 
 
