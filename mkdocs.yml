@@ -1,38 +1,52 @@
 site_name: Мой Справочник
-site_url: https://my-spravochnik.vercel.app
 
 theme:
   name: material
   language: ru
   palette:
-    # Настройка темной и светлой темы (переключатель будет вверху)
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: Включить тёмную тему
+        icon: material/weather-night
+        name: Включить темную тему
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Включить светлую тему
+  
   features:
-    - navigation.tabs          # Меню сверху (очень удобно на мобиле)
-    - navigation.sections      # Боковое меню блоками
-    - search.suggest           # Живой поиск при вводе
-    - search.highlight         # Подсветка найденных слов
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - header.autohide
+    - navigation.header
+    - navigation.instant
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
+  # --- ВОТ ЭТОТ БЛОК ВОЗВРАЩАЕТ И НАСТРАИВАЕТ ПОДСВЕТКУ КОДА: ---
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
 
 plugins:
   - search
 
-markdown_extensions:
-  - tables                     # Чтобы таблицы не ломались
-  - pymdownx.highlight:        # Красивая подсветка SQL и Python кода
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css

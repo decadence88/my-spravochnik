@@ -2,8 +2,8 @@
 
 (WAS, ab welche Zeichen, wie viel Zeichen zu nehmen)
 
+```sql 
 SELECT SUBSTR('HELLO',1,2)
-
 Ausgabe -'HE'
 
 Beispiel - 
