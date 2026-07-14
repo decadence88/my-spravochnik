@@ -10,6 +10,22 @@
         <input type="time" id="pause" value="00:02" style="padding: 12px 0; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 150px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; justify-content: center;">
     </div>
 
+    <style>
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            background: none;
+            display: none;
+            -webkit-appearance: none;
+        }
+        input[type="time"]::-webkit-clear-button {
+            -webkit-appearance: none;
+            display: none;
+        }
+        input[type="time"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            display: none;
+        }
+    </style>
+
     <!-- Кнопка без неонового свечения -->
     <button onclick="berechnen()" style="width: 170px; height: 170px; border-radius: 50%; background: #545677; color: white; border: none; font-size: 26px; font-weight: bold; cursor: pointer; transition: background-color 0.2s; outline: none;" onmouseover="this.style.backgroundColor='#b0b3e7'" onmouseout="this.style.backgroundColor='#545677'">LOS</button>
 
