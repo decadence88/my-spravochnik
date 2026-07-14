@@ -2,13 +2,12 @@
 <style> .md-content .md-typeset h1 { display: none !important; } </style>
 <div class="calc-wrapper" style="max-width: 450px; margin: 10px auto; padding: 0 10px; font-family: Arial, sans-serif; text-align: center;">
     
-    <!-- Поля ввода без надписей сверху -->
-    <div style="margin-bottom: 15px;">
-        <input type="time" id="ankommen" value="07:58" style="padding: 12px 20px; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 200px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none;">
+    <div style="margin-bottom: 12px;">
+        <input type="time" id="ankommen" value="07:58" style="padding: 12px 0; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 150px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; justify-content: center;">
     </div>
     
-    <div style="margin-bottom: 25px;">
-        <input type="time" id="pause" value="00:02" style="padding: 12px 20px; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 200px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none;">
+    <div style="margin-bottom: 20px;">
+        <input type="time" id="pause" value="00:02" style="padding: 12px 0; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 150px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; justify-content: center;">
     </div>
 
     <!-- Кнопка без неонового свечения -->
