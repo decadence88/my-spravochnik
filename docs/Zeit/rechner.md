@@ -3,11 +3,11 @@
 <div class="calc-wrapper" style="max-width: 450px; margin: 10px auto; padding: 0 10px; font-family: Arial, sans-serif; text-align: center;">
     
     <div style="margin-bottom: 12px;">
-        <input type="time" id="ankommen" value="07:58" style="padding: 12px 0; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 150px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-flex; justify-content: center; align-items: center;">
+        <input type="time" id="ankommen" value="07:58" style="padding: 12px 0; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 150px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; line-height: 1; text-indent: 0; padding-left: 0; padding-right: 0;">
     </div>
     
     <div style="margin-bottom: 20px;">
-        <input type="time" id="pause" value="00:02" style="padding: 12px 0; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 150px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-flex; justify-content: center; align-items: center;">
+        <input type="time" id="pause" value="00:02" style="padding: 12px 0; font-size: 26px; font-weight: bold; border-radius: 12px; border: none; text-align: center; width: 100%; max-width: 150px; background: var(--md-code-bg-color, #b0b3e7); color: var(--md-typeset-color, #b0b3e7); box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; display: inline-block; line-height: 1; text-indent: 0; padding-left: 0; padding-right: 0;">
     </div>
 
     <style>
@@ -15,16 +15,23 @@
             background: none !important;
             display: none !important;
             -webkit-appearance: none !important;
-            opacity: 0 !important;
-            width: 0 !important;
-            height: 0 !important;
             margin: 0 !important;
             padding: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
         }
-        input[type="time"]::-webkit-clear-button,
-        input[type="time"]::-webkit-inner-spin-button {
-            -webkit-appearance: none !important;
-            display: none !important;
+        /* Убираем любые внутренние отступы, которые Chrome подмешивает для псевдоэлементов */
+        input[type="time"]::-webkit-datetime-edit {
+            padding: 0 !important;
+            margin: 0 !important;
+            display: inline-block !important;
+            text-align: center !important;
+            width: 100% !important;
+        }
+        input[type="time"]::-webkit-datetime-edit-fields-wrapper {
+            padding: 0 !important;
+            margin: 0 !important;
+            display: inline-block !important;
         }
     </style>
 
