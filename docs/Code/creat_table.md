@@ -1,4 +1,3 @@
-# Пример
 
 ```sql
 CREATE TABLE table_name (

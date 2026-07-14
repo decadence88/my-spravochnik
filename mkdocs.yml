@@ -50,3 +50,22 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - 'Home': index.md
+  - 'Code':
+      - 'Last': Code/last.md
+      - 'Substr Extract': Code/Substr_Extract.md
+      - 'Create Table': Code/creat_table.md
+  - 'Da spk':
+      - 'Viele Werte in einer Feld': da_spk/viele_werte_in_einer_feld.md
+      - 'Neue Auftrag Schritten': da_spk/neue_auftrag_schritten.md
+      - 'Import Anleitung': da_spk/import_anleitung.md
+      - 'Export Tabelle': da_spk/export_tabelle_zur_kollegen.md
+      - 'Antworten Entwurf': da_spk/antworten_entwurf.md
+  - 'Sys admin':
+      - 'Meldung Bewegung': sys_admin/meldung_bewegung.md
+  - 'Wortschatz':
+      - 'Основные слова': wortschatz/основные_слова.md
+      - 'Test': wortschatz/test.md
+  - 'Zeit': Zeit/rechner.md  
